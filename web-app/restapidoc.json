@@ -1,0 +1,59 @@
+{
+   "basePath": "http://localhost:8080/talent-wagon",
+   "apis": [{
+      "methods": [{
+         "headers": [],
+         "bodyobject": null,
+         "jsondocId": "efec4bf7-0222-426d-848d-d9f6331efed5",
+         "consumes": [],
+         "response": {
+            "mapKeyObject": "",
+            "jsondocId": "aeddf36b-6866-4b1c-b34e-82f9fffbf1da",
+            "mapValueObject": "",
+            "object": "rest user"
+         },
+         "pathparameters": [{
+            "jsondocId": "c265824c-c4d0-496d-816f-4c0c3bcae65b",
+            "description": "The author id",
+            "name": "id",
+            "allowedvalues": [],
+            "format": "",
+            "required": "true",
+            "type": "long"
+         }],
+         "apierrors": [
+            {
+               "jsondocId": "86a00857-9ffa-4a05-9b7b-f1898c788de2",
+               "description": "Bad Request: missing parameters or bad message format",
+               "code": "400"
+            },
+            {
+               "jsondocId": "62954e39-f67d-403d-aa12-a636b4a820f9",
+               "description": "Unauthorized: must be auth",
+               "code": "401"
+            },
+            {
+               "jsondocId": "be655d78-3936-4071-8547-c758f9d225ac",
+               "description": "Forbidden: role error",
+               "code": "403"
+            },
+            {
+               "jsondocId": "2083dbff-9a5d-47fc-b5cf-51a2832a418e",
+               "description": "Object not found",
+               "code": "404"
+            }
+         ],
+         "verb": "GET",
+         "description": "Get an author",
+         "queryparameters": [],
+         "path": "/api/v0/users/{id}",
+         "produces": ["application/json"],
+         "methodName": "profile"
+      }],
+      "jsondocId": "5551b6c8-77a7-4b26-b0f3-11d68a2f9ff4",
+      "description": "Methods for user ops",
+      "name": "user controler"
+   }],
+   "objects": [],
+   "version": "0.1.1"
+}
